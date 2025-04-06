@@ -10,9 +10,12 @@ ChainWeb Mining Simulator is an interactive visualization tool that demonstrates
 
 - **Real-time Mining Simulation**: Visualizes the mining process across 20 parallel chains with dynamic block creation, mining state transitions, and dependency validation.
 - **Multiple Visualization Modes**:
-  - **WEAVE**: Traditional grid view showing all chains and block relationships
-  - **XCHAIN**: Cross-chain dependency visualization with animated connections
-  - **GRAPH**: 3D network view with concentric circles representing chain positions and dependencies
+- **WEAVE**: Traditional grid view showing all chains and block relationships
+   ![WEAVE Mode](img/weave.png)
+- **XCHAIN**: Cross-chain dependency visualization with animated connections
+   ![XCHAIN Mode](img/xchain.png)
+- **GRAPH**: 3D network view with concentric circles representing chain positions and dependencies
+   ![GRAPH Mode](img/graph3d.png)
 - **Detailed Mining Metrics**: Tracks and displays mining time, block intervals, and chain performance
 - **Interactive Controls**: Toggle between viewing modes, manipulate the 3D view, and explore the network structure
 
@@ -38,6 +41,8 @@ ChainWeb is a parallel-chain architecture developed by Kadena that achieves incr
 
 In the ChainWeb architecture, each chain depends on several other chains when creating new blocks, forming a pattern inspired by the Petersen graph. This dependency structure ensures that an attacker would need to control a significant portion of the network's hash power to successfully attack any individual chain.
 
+For more details about the ChainWeb protocol and Kadena's blockchain technology, visit the [Kadena website](https://kadena.io).
+
 ## To run this simulator
 
 1. Download and install [Processing](https://processing.org/download)
@@ -58,6 +63,13 @@ To run the simulator from the command line, follow these steps:
    processing-java --sketch=`pwd` --run
    ```
 4. The simulator will launch, and you can interact with it as described in the Controls section.
+
+## 🎥 Video Demonstrations
+
+To better understand the ChainWeb Mining Simulator, you can watch the following video demonstrations:
+
+- **[V05A.mp4](mp4/V05A.mp4)**: Demonstrates the WEAVE mode and its visualization of cross-chain dependencies.
+- **[V05F.mp4](mp4/V05F.mp4)**: Showcases the GRAPH mode with 3D network visualization and interactive controls.
 
 ## License
 
